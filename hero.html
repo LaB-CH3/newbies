@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* font */
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+        /* variables */
+        :root{
+            --font-family: 'Space Grotesk', sans-serif;
+            --color-black: #000;
+            --color-white: #fff;
+        }
+
+
+        /* reset */
+        body, html{
+            margin: 0px;
+            padding: 0px;
+            font-family: var(--font-family);
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+
+        /* styles */
+
+        #hero{
+            display: table;
+            height: 100vh;
+            width: 100%;
+            background-image: url('https://images.pexels.com/photos/29410753/pexels-photo-29410753/free-photo-of-scenic-colonial-mansion-with-palm-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-container{
+            display: table-cell;
+            vertical-align: middle;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content{
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-content h1{
+            font-size: 4rem;
+            color: var(--color-white);
+            line-height: 1.2;
+        }
+
+        .hero-content p{
+            font-size: 1.5rem;
+            color: var(--color-white);
+            font-weight: 400;
+        }
+
+        .hero__call-to-action{
+            margin-top: 2rem;
+        }
+
+         .btn{
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary{
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>The documentation you want, effortlessly</h1>
+                <p>Meet the modern standard for public-facing documentation. Beautiful out of the box, easy to maintain, and built to convert users.</p>
+
+                <div class="hero__call-to-action">
+                    <a href="#" class="btn btn-primary">Start for free</a>
+                    <a href="#" class="btn">Contact sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
